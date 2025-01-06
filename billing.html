@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="billing.css">
+    <title>Billing</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Food Menu</div>
+        <div class="item-list">
+            1. Samosa
+            <br><br>
+            2. Momos
+            <br><br>
+            3. Pizza
+            <br><br>
+            4. Burger
+            <br><br>
+            5. Cold Drink
+            <br><br>
+            6. Noodles
+            <br><br>
+            7. Exit
+            <br><br>
+            Enter your choice:<input type="number" id="txtans" list="item-list" placeholder="Enter item number">
+            <button onclick="dowhileloop()">Enter</button>
+        </div>
+        <script>
+            ans=1;
+            function dowhileloop(){
+                do{
+                    ans=Number(document.getElementById("txtans").value);
+                    switch(ans){
+                        case 1:{
+                            document.write("<h1>You have opted for samosa.</h1>");
+                            document.write("<h1>Your bill will be prepared soon.</h1>");
+                            break;
+                        }
+                        case 2:{
+                            document.write("<h1>You have opted for Momos.</h1>");
+                            document.write("<h1>Your bill will be prepared soon.</h1>");
+                            break;
+                        }
+                        case 3:{
+                            document.write("<h1>You have opted for French Fries.</h1>");
+                            document.write("<h1>Your bill will be prepared soon.</h1>");
+                            break;
+                        }
+                        case 4:{
+                            document.write("<h1>You have opted for Pizza.</h1>");
+                            document.write("<h1>Your bill will be prepared soon.</h1>");
+                            break;
+                        }
+                        case 5:{
+                            document.write("<h1>You have opted for Burger.</h1>");
+                            document.write("<h1>Your bill will be prepared soon.</h1>");
+                            break;
+                        }
+                        case 6:{
+                            document.write("<h1>You have opted for Cold Drink.</h1>");
+                            document.write("<h1>Your bill will be prepared soon.</h1>");
+                            break;
+                        }
+                        case 7:{
+                            document.write("<h1>You have opted for Exit.</h1>");
+                            document.write("<h1>Your bill will be prepared soon.</h1>");
+                            break;
+                        }
+                        case 8:{
+                            document.write("<h1>Invalid Choice.</h1>");
+                            break;  
+                        }
+                    }
+                } while(ans!=8);
+            }
+        </script>
+    </div>
+</body>
+</html>
